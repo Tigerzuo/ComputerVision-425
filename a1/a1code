@@ -1,0 +1,10 @@
+from PIL import Image
+import numpy as np
+import math
+from scipy import signal
+
+def boxfilter(n):
+    print(n%2)
+    #assert n%2==0, "Box size cannot be even!"
+    if(n%2 != 0):
+    	return np.full((n,n),7)
